@@ -1,3 +1,4 @@
+from copy import deepcopy
 from gpt_manager import talk_to_ai, game_rules
 from players.guesser import Guesser
 
@@ -35,13 +36,14 @@ class AIGuesser(Guesser):
         guess = None
         remaining_options = self.get_remaining_options()
         while guess is None:
+            conversation_history_copy = deepcopy(self.conversation_history)
             prompt = "The remaining words are: " + str(remaining_options) + ". \n"
             prompt += "The following is the codemaster's clue: " + str(self.clue) + ". \n"
             prompt += "Provide a guess for one of the remaining words associated with this clue. \n"
             prompt += "Provide no additional text. \n"
             # Bonus Prompts
             # prompt += "Think very carefully about your guess before responding. \n"
-            response = talk_to_ai(self.conversation_history, prompt)
+            response = talk_to_ai(conversation_history_copy, prompt)
             if response in self.words:
                 guess = response
             else:

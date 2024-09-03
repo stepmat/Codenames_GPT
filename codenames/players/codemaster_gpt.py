@@ -1,3 +1,4 @@
+from copy import deepcopy
 from gpt_manager import talk_to_ai, game_rules
 from players.codemaster import Codemaster
 
@@ -38,7 +39,8 @@ class AICodemaster(Codemaster):
         number = None
         red, blue, civilian, assassin = self.get_remaining_options()
         while clue is None or number is None:
-            
+            conversation_history_copy = deepcopy(self.conversation_history)
+
             # Uncomment one of the following sections to perform the respective prompt engineering
 
             # DEFAULT
@@ -49,7 +51,7 @@ class AICodemaster(Codemaster):
             prompt += "Assassin: " + str(assassin) + ". "
             prompt += "Provide a single word clue and number for the guesser in the following format ('pebble',2). "
             prompt += "Stick to this format exactly and provide no additional text. "
-            response = talk_to_ai(self.conversation_history, prompt)
+            response = talk_to_ai(conversation_history_copy, prompt)
 
             # CAUTIOUS
             # prompt = "The remaining words are: "
@@ -60,7 +62,7 @@ class AICodemaster(Codemaster):
             # prompt += "Provide a single word clue and number for the guesser in the following format ('pebble',2). "
             # prompt += "Stick to this format exactly and provide no additional text. "
             # prompt += "Make sure that the number for your guess is always 1. "
-            # response = talk_to_ai(self.conversation_history, prompt)
+            # response = talk_to_ai(conversation_history_copy, prompt)
 
             # RISKY
             # prompt = "The remaining words are: "
@@ -71,7 +73,7 @@ class AICodemaster(Codemaster):
             # prompt += "Provide a single word clue and number for the guesser in the following format ('pebble',2). "
             # prompt += "Stick to this format exactly and provide no additional text. "
             # prompt += "Make sure to pick a large number for your guess. "
-            # response = talk_to_ai(self.conversation_history, prompt)
+            # response = talk_to_ai(conversation_history_copy, prompt)
 
             # CHAIN-OF-THOUGHT
             # prompt = "The remaining words are: "
@@ -87,11 +89,11 @@ class AICodemaster(Codemaster):
             #     Steps: Your steps here.
             #     Answer: (a single word here) / (A list of words here)
             # """
-            # explanation_response = talk_to_ai(self.conversation_history, prompt)
+            # explanation_response = talk_to_ai(conversation_history_copy, prompt)
             # print("\n\n" + explanation_response + "\n\n")
             # prompt = "Give me only the final answer in the previous prompt in the following format ('pebble',2). "
             # prompt += "Stick to this format exactly and provide no additional text. "
-            # response = talk_to_ai(self.conversation_history, prompt)
+            # response = talk_to_ai(conversation_history_copy, prompt)
 
             # SELF-REFINE
             # prompt = "The remaining words are: "
@@ -102,7 +104,7 @@ class AICodemaster(Codemaster):
             # prompt += "Provide a single word clue and number for the guesser in the following format ('pebble',2). "
             # prompt += "The clue should avoid associations with Blue, Assassin and Civilian words. "
             # print("\n\n" + prompt + "\n\n")
-            # initial_response = talk_to_ai(self.conversation_history, prompt)
+            # initial_response = talk_to_ai(conversation_history_copy, prompt)
             # print("\n\n" + initial_response + "\n\n")
             # other_words = "{" + str(blue).replace("[", "").replace("]", "").replace("'", "") + ", " + str(assassin).replace("[", "").replace("]", "").replace("'", "") + ", " + str(civilian).replace("[","").replace("]", "").replace("'", "") + "}";
             # prompt = "Evaluate the Codenames clue " + initial_response + " for the Red words {" + str(red).replace("[","").replace("]","").replace("'","") + "} and avoid words " + other_words + " on how related it is to the red words, and likelihood of accidental associate with blue, assassin, or civilian words."
@@ -112,7 +114,7 @@ class AICodemaster(Codemaster):
             #     …
             # """
             # print("\n\n" + prompt + "\n\n")
-            # feedback = talk_to_ai(self.conversation_history, prompt)
+            # feedback = talk_to_ai(conversation_history_copy, prompt)
             # print("\n\n" + feedback + "\n\n")
             # prompt = "The remaining words are: "
             # prompt += "Red: " + str(red) + ". "
@@ -124,9 +126,9 @@ class AICodemaster(Codemaster):
             # prompt += "Provide a single word clue and number for the guesser in the following format ('pebble',2). "
             # prompt += "Stick to this format exactly and provide no additional text. "
             # print("\n\n" + prompt + "\n\n")
-            # response = talk_to_ai(self.conversation_history, prompt)
+            # response = talk_to_ai(conversation_history_copy, prompt)
 
-            # SOLO-PERFORMANCE
+            # Solo-Performance Prompting
             # prompt = """
             # When faced with a task, begin by identifying the participants who will contribute to solving the task. Then, initiate a multi-round collaboration process until a final solution is reached. The participants will give critical comments and detailed suggestions whenever necessary.
             # Here are some examples:
@@ -171,11 +173,11 @@ class AICodemaster(Codemaster):
             # other_words = "{" + str(blue).replace("[", "").replace("]", "").replace("'", "") + ", " + str(assassin).replace("[", "").replace("]", "").replace("'", "") + ", " + str(civilian).replace("[", "").replace("]", "").replace("'", "") +"}";
             # prompt += "Here are the rest of the words on the board: " + other_words + ". "
             # print("\n\n" + prompt + "\n\n")
-            # initial_response = talk_to_ai(self.conversation_history, prompt)
+            # initial_response = talk_to_ai(conversation_history_copy, prompt)
             # print("\n\n" + initial_response + "\n\n")
             # prompt = "Give me only the final answer in the previous response in the following format ('pebble',2). "
             # prompt += "Stick to this format exactly and provide no additional text. "
-            # response = talk_to_ai(self.conversation_history, prompt)
+            # response = talk_to_ai(conversation_history_copy, prompt)
 
             try:
                 split_input = response.split(",");
