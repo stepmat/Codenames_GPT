@@ -24,7 +24,7 @@ Guessing an assassin-linked word or the 7 blue words before all 8 red words will
 """
 
 
-def talk_to_ai(conversation_history, prompt, model="gpt-4-1106-preview"):
+def talk_to_ai(conversation_history, prompt, model="gpt-4o"):
     # model options = [gpt-3.5-turbo-0125 , gpt-4-1106-preview , gpt-4-0125-preview]
     conversation_history.append({"role": "user", "content": prompt})
     response = client.chat.completions.create(
