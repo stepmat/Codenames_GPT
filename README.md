@@ -228,8 +228,8 @@ Or just use Python's packaging system, pip3, which is included by default from t
 
 ## LLM Agents (Replicate Experiments from "Codenames as a Benchmark for Large Language Models")
 
-* Open lll_manager.py and add your API keys near the top of the file where it says, "ENTER YOUR API KEY HERE".
-  * This needs to be done for each api key requested
+* Open llm_manager.py and add your API keys near the top of the file where it says, "ENTER YOUR API KEY HERE".
+  * This needs to be done for each api key requested.
   
 * Experiment results can be replicated by running "round_robin_script.py"
   * Note, you will need to comment or uncomment the desired models in the all_codemasters and all_guessers arrays.
