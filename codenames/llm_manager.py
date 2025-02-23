@@ -16,32 +16,34 @@ huggingface_token = "ENTER YOUR API KEY HERE"
 # https://czechgames.com/files/rules/codenames-rules-en.pdf
 # Codemaster = Spymaster, Guesser = Field Operative
 game_rules = """
-Codenames is a word-based game of language understanding and communication.
-Players are split into two teams (red and blue), with each team consisting of a Codemaster and Guesser.
-Setup:
-At the start of the game, the board consists of 25 English words.
-The Codemasters on each team has access to a hidden map that tells them the identity of all of the words (Red, Blue, Civilian or Assassin).
-The Guessers on each team do not have access to this map, and so do not know the identity of any words.
+1) Overview:
+Codenames is a word-based game of language understanding and communication. 
+Players are split into two teams (red and blue), with each team consisting of a Codemaster and Guesser. 
+The red team always goes first.
+2) Setup:
+At the start of the game, the board consists of 25 English words. 
+The Codemaster on each team has access to a hidden map that tells them the identity of all of the words (Red, Blue, Civilian or Assassin). 
+A standard map in Codenames has 9 red words, 8 blue words, 7 civilian words and 1 assassin word. 
+The Guessers on each team do not have access to this map, and so do not know the identity of any words. 
 Players need to work as a team to select all their words in as few turns as possible, while minimising the number of incorrect guesses.
-Turns:
-At the start of each team's turn, the Codemaster supplies a clue and a number (the number of words related to that clue).
+3) Turns: 
+At the start of each team’s turn, the Codemaster supplies a clue and a number (the number of words related to that clue). 
 The clue must:
 - Be semantically related to the words the Codemaster wants their Guesser to guess.
 - Be a single English word.
-- NOT be derived from or derive one of the words on the board.
-The clue number must be greater than or equal to zero.
-The Guesser then selects from the remaining words on he board, based on which word is most associated with the Codemaster's clue.
-The identity of the selected word is then revealed to all players.
-If the Guesser selected a word that is their team's colour, then they may get to select another word.
-The Guesser must always make at least one guess each turn, and can guess up to one word more than the number provided in the Codemaster's clue.
-The only exception to this is if the Codemaster's clue number is zero, then there is no limit on the maximum number of guesses.
-If a Guesser selects a word that is not their team's colour, their turn ends.
+- Not derive, or be derived from, one of the words on the board.
+The clue number must be greater than or equal to zero. 
+The Guesser then selects from the remaining words on the board, based on which word is most associated with the Codemaster’s clue. 
+The identity of the selected word is then revealed to all players. 
+If the Guesser selected a word that is their team’s colour, then they may get to select another word. 
+The Guesser must always make at least one guess each turn, and can guess up to one word more than the number provided in the Codemaster’s clue. 
+The only exception to this is if the Codemaster’s clue number is zero, then there is no limit on the maximum number of guesses. 
+If a Guesser selects a word that is not their team’s colour, their turn ends. 
 The Guesser can choose to stop selecting words (ending their turn) any time after the first guess.
-Ending:
-Play proceeds, passing back and forth, until one of three outcomes is achieved:
-All of the words of your team's colour have been selected -- your team wins
-All of the words of the other team's colour have been selected -- your team loses
-Your team selects the assassin tile -- your team loses
+4) Ending: 
+Play proceeds, passing back and forth, until one of two outcomes is achieved:
+- All of the words of a team’s colour have been selected (this team wins).
+- A team’s guesser selects the assassin word (this team loses).
 """
 
 
