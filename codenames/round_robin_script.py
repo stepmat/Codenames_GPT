@@ -77,8 +77,8 @@ def round_robin_tournament(codemasters, guessers, num_games=1, single_team=True,
                             "--gr_model", gr[1], "--gr_version", gr[2],
                             "--cmb_model", cmb[1], "--cmb_version", cmb[2],
                             "--gb_model", gb[1], "--gb_version", gb[2],
-                            # "--w2v", "players/GoogleNews-vectors-negative300.bin",
-                            # "--glove", "players/glove.6B.300d.txt",
+                            # "--w2v", "players/GoogleNews-vectors-negative300.bin", # uncomment if using w2v agent
+                            # "--glove", "players/glove.6B.300d.txt",                # uncomment if using glove agent
                             "--single_team", str(single_team)
                             ])
 
