@@ -7,6 +7,9 @@ all_codemasters = [
     # ["players.codemaster_llm.AICodemaster", "GPT", "o3-mini-2025-01-31"],
     ["players.codemaster_llm.AICodemaster", "GPT", "gpt-4o-2024-08-06"],
 
+    # ["players.codemaster_llm.AICodemaster", "DeepSeek", "deepseek-chat"],
+    # ["players.codemaster_llm.AICodemaster", "DeepSeek", "deepseek-reasoner"],
+
     ["players.codemaster_llm.AICodemaster", "Gemini", "gemini-1.5-pro-002"],
     # ["players.codemaster_llm.AICodemaster", "Gemini", "gemini-1.5-pro"],
 
@@ -31,6 +34,9 @@ all_guessers = [
     # ["players.guesser_llm.AIGuesser", "GPT", "o1-mini-2024-09-12"],
     # ["players.guesser_llm.AIGuesser", "GPT", "o3-mini-2025-01-31"],
     ["players.guesser_llm.AIGuesser", "GPT", "gpt-4o-2024-08-06"],
+
+    # ["players.guesser_llm.AIGuesser", "DeepSeek", "deepseek-chat"],
+    # ["players.guesser_llm.AIGuesser", "DeepSeek", "deepseek-reasoner"],
 
     ["players.guesser_llm.AIGuesser", "Gemini", "gemini-1.5-pro-002"],
     # ["players.guesser_llm.AIGuesser", "Gemini", "gemini-1.5-pro"],
