@@ -12,6 +12,7 @@ openAI_api_key = "ENTER YOUR API KEY HERE"
 google_api_key = "ENTER YOUR API KEY HERE"
 anthropic_api_key = "ENTER YOUR API KEY HERE"
 huggingface_token = "ENTER YOUR API KEY HERE"
+deepseek_key = "ENTER YOUR API KEY HERE"
 
 # https://czechgames.com/files/rules/codenames-rules-en.pdf
 # Codemaster = Spymaster, Guesser = Field Operative
@@ -72,6 +73,29 @@ class GPT(LLM):
         response = self.client.chat.completions.create(
             messages=self.conversation_history,
             model=self.model_name,
+        ).choices[0].message.content
+        self.conversation_history.append({"role": "assistant", "content": response})
+        if not store_in_context:
+            self.conversation_history = conversation_history_copy
+        return response
+
+
+class DeepSeek(LLM):
+
+    # deepseek-chat, deepseek-reasoner
+    def __init__(self, system_prompt="", version="deepseek-reasoner"):
+        super().__init__()
+        self.model_name = version
+        self.client = OpenAI(api_key=deepseek_key, base_url="https://api.deepseek.com")
+        self.conversation_history = [{"role": "system", "content": system_prompt}]
+
+    def talk_to_ai(self, prompt, store_in_context=True):
+        conversation_history_copy = deepcopy(self.conversation_history)
+        self.conversation_history.append({"role": "user", "content": prompt})
+        response = self.client.chat.completions.create(
+            messages=self.conversation_history,
+            model=self.model_name,
+            stream=False
         ).choices[0].message.content
         self.conversation_history.append({"role": "assistant", "content": response})
         if not store_in_context:
