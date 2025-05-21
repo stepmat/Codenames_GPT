@@ -286,6 +286,14 @@ class Game:
         game_condition = GameCondition.RED_TURN
         turn_counter = 0
 
+        # set the initial board/game state for all players
+        words_in_play = self.get_words_on_board()
+        current_key_grid = self.get_key_grid()
+        self.codemaster_red.set_game_state(words_in_play, current_key_grid)
+        self.codemaster_blue.set_game_state(words_in_play, current_key_grid)
+        self.guesser_red.set_board(words_in_play)
+        self.guesser_blue.set_board(words_in_play)
+
         while game_condition != GameCondition.BLUE_WIN and game_condition != GameCondition.RED_WIN:
 
             if game_condition == GameCondition.RED_TURN:
@@ -304,8 +312,8 @@ class Game:
             words_in_play = self.get_words_on_board()
             current_key_grid = self.get_key_grid()
             move_history = self.get_move_history()
-            codemaster.set_game_state(words_in_play, current_key_grid)
             codemaster.set_move_history(move_history)
+            codemaster.set_game_state(words_in_play, current_key_grid)
             self._display_key_grid()
             self._display_board_codemaster()
 
@@ -322,8 +330,8 @@ class Game:
             while keep_guessing:
 
                 move_history = self.get_move_history()
-                guesser.set_board(words_in_play)
                 guesser.set_move_history(move_history)
+                guesser.set_board(words_in_play)
                 guess_answer = guesser.get_answer()
 
                 # if no comparisons were made/found than retry input from codemaster
