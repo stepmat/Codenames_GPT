@@ -19,11 +19,17 @@ class GameRun:
         parser.add_argument("guesser_red", help="import string of form A.B.C.MyClass or 'human'")
         parser.add_argument("codemaster_blue", help="import string of form A.B.C.MyClass or 'human'")
         parser.add_argument("guesser_blue", help="import string of form A.B.C.MyClass or 'human'")
-        parser.add_argument("--seed", help="Random seed value for board state -- integer or 'time'", default='time')
 
+        parser.add_argument("--cmr_version", help="specific LLM version string for red codemaster", default="")
+        parser.add_argument("--gr_version", help="specific LLM version string for red guesser", default="")
+        parser.add_argument("--cmb_version", help="specific LLM version string for blue codemaster", default="")
+        parser.add_argument("--gb_version", help="specific LLM version string for blue guesser", default="")
+
+        parser.add_argument("--seed", help="Random seed value for board state -- integer or 'time'", default='time')
         parser.add_argument("--no_log", help="Supress logging", action='store_true', default=False)
         parser.add_argument("--no_print", help="Supress printing", action='store_true', default=False)
         parser.add_argument("--game_name", help="Name of game in log", default="default")
+        parser.add_argument("--single_team", help="Playing single team, or two teams version", default=False)
 
         args = parser.parse_args()
 
@@ -33,6 +39,7 @@ class GameRun:
             self._save_stdout = sys.stdout
             sys.stdout = open(os.devnull, 'w')
         self.game_name = args.game_name
+        self.single_team = args.single_team
 
         self.gr_kwargs = {}
         self.cmr_kwargs = {}
@@ -71,19 +78,15 @@ class GameRun:
             self.guesser_blue = self.import_string_to_class(args.guesser_blue)
             print('loaded guesser class')
 
-        # if the game is going to have an AI, load LLM model and version
+        # if the game is going to have an AI, load specific version
         if sys.argv[1] != "human" or sys.argv[2] != "human":
-            if args.cmr_model is not None and args.cmr_model != "":
-                self.cmr_kwargs["model"] = args.cmr_model
+            if args.cmr_version is not None and args.cmr_version != "":
                 self.cmr_kwargs["version"] = args.cmr_version
-            if args.gr_model is not None and args.gr_model != "":
-                self.gr_kwargs["model"] = args.gr_model
+            if args.cmr_version is not None and args.cmr_version != "":
                 self.gr_kwargs["version"] = args.gr_version
-            if args.cmb_model is not None and args.cmb_model != "":
-                self.cmb_kwargs["model"] = args.cmb_model
+            if args.cmr_version is not None and args.cmr_version != "":
                 self.cmb_kwargs["version"] = args.cmb_version
-            if args.gb_model is not None and args.gb_model != "":
-                self.gb_kwargs["model"] = args.gb_model
+            if args.cmr_version is not None and args.cmr_version != "":
                 self.gb_kwargs["version"] = args.gb_version
 
         # set seed so that board/keygrid can be reloaded later
