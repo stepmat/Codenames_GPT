@@ -116,7 +116,7 @@ An optional single_team argument can be used to decide whether to play the singl
 * --single_team *Boolean*
   * (by default this will be False, playing the two teams setup)
  
-A set of optional version arguments can be used to specify an exact LLM version each codemaster and guesser agent.
+A set of optional version arguments can be used to specify an exact LLM version for each codemaster and guesser agent.
 * --cmr_version *String*
 * --gr_version *String*
 * --cmb_version *String*
