@@ -290,9 +290,10 @@ class Game:
         words_in_play = self.get_words_on_board()
         current_key_grid = self.get_key_grid()
         self.codemaster_red.set_game_state(words_in_play, current_key_grid)
-        self.codemaster_blue.set_game_state(words_in_play, current_key_grid)
         self.guesser_red.set_board(words_in_play)
-        self.guesser_blue.set_board(words_in_play)
+        if not self.single_team:
+            self.codemaster_blue.set_game_state(words_in_play, current_key_grid)
+            self.guesser_blue.set_board(words_in_play)
 
         while game_condition != GameCondition.BLUE_WIN and game_condition != GameCondition.RED_WIN:
 
