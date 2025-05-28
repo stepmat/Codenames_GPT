@@ -65,7 +65,7 @@ This competition is supported by the IEEE Computational Intelligence Society (CI
 * **Second Place:** $300 USD
 * **Third Place:** $200 USD
 
-Please note, these prizes must be awarded in accordance with the [IEEE CIS prize distribution policy](https://cis.ieee.org/images/files/Documents/competitions/prize-dist-policy.pdf). This means that competition entrants who wish to be eligible for this prize money must be involved in a maximum of one submission team.
+Please note, these prizes must be awarded in accordance with the [IEEE CIS prize distribution policy](https://cis.ieee.org/images/files/Documents/competitions/prize-dist-policy.pdf). This means that competition entrants who wish to be eligible for this prize money can only be associated with a maximum of one submission (per track).
 
 ## Additional Rules
 
