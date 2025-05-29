@@ -99,7 +99,8 @@ Please take note of the following deadlines:
 * Date to submit final code / files for the competition.
   
 **Result Presentation:** 26-29 August 2025
-* Results will be presented during the CoG 2025 conference.
+* Results will be presented during the IEEE Conference on Games (CoG).
+* Please note, that you do not need to attend this conference to participate in the competition (although it would be great to see you there)!
 
 &nbsp;
 
