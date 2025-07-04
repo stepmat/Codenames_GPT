@@ -28,7 +28,7 @@ class AIGuesser(Guesser):
         response = None
         prompt = ""
         guess_again = False
-        while response is None and self.guesses <= self.num:
+        while response is None and (self.guesses <= self.num or self.num == 0):
             prompt += "The remaining words are: " + str(self.get_remaining_options()) + ". "
             prompt += "The following is the Codemaster's clue: (" + str(self.clue) + ", " + str(self.num) + "). "
             prompt += "You have picked " + str(self.guesses) + " words this turn. "
