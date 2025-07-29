@@ -82,11 +82,11 @@ class GameRun:
         if sys.argv[1] != "human" or sys.argv[2] != "human":
             if args.cmr_version is not None and args.cmr_version != "":
                 self.cmr_kwargs["version"] = args.cmr_version
-            if args.cmr_version is not None and args.cmr_version != "":
+            if args.gr_version is not None and args.gr_version != "":
                 self.gr_kwargs["version"] = args.gr_version
-            if args.cmr_version is not None and args.cmr_version != "":
+            if args.cmb_version is not None and args.cmb_version != "":
                 self.cmb_kwargs["version"] = args.cmb_version
-            if args.cmr_version is not None and args.cmr_version != "":
+            if args.gb_version is not None and args.gb_version != "":
                 self.gb_kwargs["version"] = args.gb_version
 
         # set seed so that board/keygrid can be reloaded later
