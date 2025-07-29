@@ -64,7 +64,13 @@ class HumanGuesser(Guesser):
         return answer_input
 
     def keep_guessing(self):
-        return True
+        guess_again = False
+        response = input("Answer only 'y' (yes) or 'n' (no). Other answers will be considered as n. >> ")
+        if "y" in response:
+            guess_again = True
+        elif "n" in response:
+            guess_again = False
+        return guess_again
 
     def _is_valid(self, result):
         if result.upper() in self.words:
