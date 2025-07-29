@@ -32,6 +32,7 @@ class HumanCodemaster(Codemaster):
 
     def __init__(self):
         super().__init__()
+        self.team = team
         pass
 
     def set_game_state(self, words_in_play, map_in_play):
@@ -44,6 +45,8 @@ class HumanCodemaster(Codemaster):
         type(clue_input)
         clue = clue_input.split(" ")
 
-        if len(clue) == 1:
-            clue.append('1')
+        if len(temp_clue) == 1:
+            clue = [temp_clue[0],1]
+        else:
+            clue = [temp_clue[0], int(temp_clue[1])]
         return clue
