@@ -43,6 +43,7 @@ class HumanGuesser(Guesser):
 
     def __init__(self):
         super().__init__()
+        self.team = team
         pass
 
     def set_clue(self, clue, num):
