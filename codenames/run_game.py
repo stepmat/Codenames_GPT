@@ -124,6 +124,7 @@ if __name__ == "__main__":
                 do_print=game_setup.do_print,
                 do_log=game_setup.do_log,
                 game_name=game_setup.game_name,
+                single_team=game_setup.single_team,
                 cmr_kwargs=game_setup.cmr_kwargs,
                 gr_kwargs=game_setup.gr_kwargs,
                 cmb_kwargs=game_setup.cmb_kwargs,
