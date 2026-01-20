@@ -1,4 +1,4 @@
-# Codenames AI Competition (2025)
+<img width="1650" height="105" alt="image" src="https://github.com/user-attachments/assets/74f41251-bc46-4b38-87b8-e4b9fdb13400" /># Codenames AI Competition (2025)
 
 ![image](https://github.com/user-attachments/assets/510cbaa5-a579-46a3-94c6-2cee11f60a7c)
 
@@ -38,7 +38,7 @@ Best of 9 games (only red team), where you try to win in the fewest turns
 * 3rd place: Smiling Turtle
 
 ### Two Team Track:
-Best of 9 games (only red team), where you try to win in the fewest turns
+Round-robin to get top 4 teams, followed by “best-of-three” elimination
 * 1st place: C.O.S.M.O.
 * 2nd place: Kossy
 * 3rd place: Mi3
