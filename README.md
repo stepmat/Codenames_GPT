@@ -43,14 +43,6 @@ Round-robin to get top 4 teams, followed by “best-of-three” elimination
 * 2nd place: Kossy
 * 3rd place: Mi3
 
-## Registration
-
-To register for this competition, please post a message on the following discord group stating your team name, along with details of the members and their affiliations:
-* [Discord](https://discord.gg/uHUynQJp6r)
-
-A separate private channel for your team will then be created for you to ask private questions to the organisers.
-Public questions or troubleshooting requests should be posted on the main general channel.
-
 ## Submissions
 
 Competition entrants will need to submit two agents, one Codemaster and one Guesser.
@@ -84,16 +76,6 @@ Each submission will (unless otherwise requested by the entrants) be automatical
 
 * **First Round:** The first round will consist of a round robin style tournament to evaluate the performance of each entrant team. For the Single Team track, performance will be determined based on the average score over all games. For the Two Teams track, performance will be determined based on the average win-rate over all games. The top performing four teams from each track will then progress to the second round. In the event of a tie, a single additional game will be played to break the split.
 * **Second Round:** The second round will consist of a single elimination style knockout tournament between the top four teams. Pair-ups will be determined by standard seeding (i.e., highest paired with lowest) and matches will be a best of three games.
-
-## Prize Money
-
-This competition is supported by the IEEE Computational Intelligence Society (CIS) who have provided prize money for the successful winners of each track (single and two teams). Prize money will be allocated for the 1st, 2nd and 3rd place winners of each track as follows:
-
-* **First Place:** $500 USD
-* **Second Place:** $300 USD
-* **Third Place:** $200 USD
-
-Please note, these prizes must be awarded in accordance with the [IEEE CIS prize distribution policy](https://cis.ieee.org/images/files/Documents/competitions/prize-dist-policy.pdf). This means that competition entrants who wish to be eligible for this prize money can only be associated with a maximum of one submission (per track).
 
 ## Additional Rules
 
