@@ -15,6 +15,34 @@ This competition and the code framework provided in this repository are based on
   
 **Further installation requirements are found below.**
 
+## Competiton Results
+
+The 2025 iteration of the Codenames AI competition has now concluded! 
+The organisers would like to thank all teams who took part, as without you this competition would not have been the success it was.
+
+In total we had seven valid competition submission entries:
+* Purrfect Cat-titude, Ohio University - Athens (Tin Vuong, Minh Le)
+* Mi3, UC Merced (Kobe Kimoto-Ross, Cristian Parker, Ross Greer)
+* Semantic Squad, Ohio University (Shiva Nagalla, Monitha Nimmagadda)
+* C.O.S.M.O., Brigham Young University (Christopher Archibald, Joey Dahlke, Thomas Esplin, Olivia Leavitt, Matthew Sheppard)
+* Kossy, Independent Researcher (Katsuki Ohto)
+* Smiling Turtle, The Hebrew University of Jerusalem, (Daniel Ruderman, Dafna Shahaf)
+* Wild Falcon, Independent Researcher (Mikhail Vlasov)
+
+Full results for the competition can be found in the provided results folder in this repository, with an overall summary given below:
+
+### Single Team Track:
+Best of 9 games (only red team), where you try to win in the fewest turns
+* 1st place: C.O.S.M.O.
+* 2nd place: Mi3
+* 3rd place: Smiling Turtle
+
+### Two Team Track:
+Best of 9 games (only red team), where you try to win in the fewest turns
+* 1st place: C.O.S.M.O.
+* 2nd place: Kossy
+* 3rd place: Mi3
+
 ## Registration
 
 To register for this competition, please post a message on the following discord group stating your team name, along with details of the members and their affiliations:
