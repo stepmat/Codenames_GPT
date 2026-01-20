@@ -1,4 +1,4 @@
-<img width="1650" height="105" alt="image" src="https://github.com/user-attachments/assets/74f41251-bc46-4b38-87b8-e4b9fdb13400" /># Codenames AI Competition (2025)
+# Codenames AI Competition (2025)
 
 ![image](https://github.com/user-attachments/assets/510cbaa5-a579-46a3-94c6-2cee11f60a7c)
 
