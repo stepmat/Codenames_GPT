@@ -1,4 +1,4 @@
-# Codenames AI Competition (2025)
+# Codenames AI Competition (2026)
 
 ![image](https://github.com/user-attachments/assets/510cbaa5-a579-46a3-94c6-2cee11f60a7c)
 
@@ -50,6 +50,7 @@ To encourage the use of open-source models, and to allow those who cannot afford
 The competition will consist of two separate tracks:
 
 * **Single Team:** Played using the same scoring system as the previous Codenames AI framework, where a single team (red codemaster/guesser) attempts to identify all red words in as few turns as possible. Teams are awarded a score at the end of the game based on the number of turns taken (lower score is better). The only exception to this is if the guesser selects all blue words or the assassin word, which results in a maximum score of 25 points.
+  * Note. This year, the single team track will also evaluate how agents perform when paired with teammates from other submissions. This is to prevent agents from simply learning hardcoded strategies for their submitted teammate, incentivising more general playstyles.
 * **Two Teams:** Played using the full set of rules from the original Codenames game, where two teams (red codemaster/guesser and blue codemaster/guesser) attempt to identify all words of their team’s colour first. Selecting the assassin word results in an immediate win for the other team. Guessers can also inadvertently help the opposing team win if they accidentally select any words of their colour. Rather than using a scoring system, this version measures success in terms of overall win-rate.
 
 Each submission will (unless otherwise requested by the entrants) be automatically included in both tracks, with the entrant evaluation process for both tracks being as follows:
