@@ -60,13 +60,7 @@ Each submission will (unless otherwise requested by the entrants) be automatical
 
 ## Prize Money
 
-This competition is supported by the IEEE Computational Intelligence Society (CIS) who have provided prize money for the successful winners of each track (single and two teams). Prize money will be allocated for the 1st, 2nd and 3rd place winners of each track as follows:
-
-* **First Place:** $500 USD
-* **Second Place:** $300 USD
-* **Third Place:** $200 USD
-
-Please note, these prizes must be awarded in accordance with the [IEEE CIS prize distribution policy](https://cis.ieee.org/images/files/Documents/competitions/prize-dist-policy.pdf). This means that competition entrants who wish to be eligible for this prize money can only be associated with a maximum of one submission (per track).
+TBD
 
 ## Additional Rules
 
@@ -89,17 +83,17 @@ Whilst the framework provided uses the original pool of 395 possible words from 
 
 Please take note of the following deadlines:
 
-**Registration Deadline:** 31 July 2025
+**Registration Deadline:** 4 August 2026
 * Date to register your interest in the competition.
   
-**Submission for Testing Deadline:** 4 August 2025
+**Submission for Testing Deadline:** 11 August 2026
 * Date to submit your files for testing purposes, the competition organisers will check that the code can be run successfully and provide feedback if not.
 * Entrants are not required to submit their files by this date, but will not receive any testing feedback if they do not.
   
-**Final Submission Deadline:** 11 August 2025
+**Final Submission Deadline:** 18 August 2026
 * Date to submit final code / files for the competition.
   
-**Result Presentation:** 26-29 August 2025
+**Result Presentation:** 1-4 September 2026
 * Results will be presented during the IEEE Conference on Games (CoG).
 * Please note, that you do not need to attend this conference to participate in the competition (although it would be great to see you there)!
 
@@ -242,7 +236,6 @@ get_answer() -> Str
 `get_answer` returns the current guess of the Guesser, given the state of the board and the previous clue.
 
 ## Move History
-UPDATED (14/05/2025)
 
 A shared move history has been added into the game framework, that both the Codemaster and Guesser base classes can access.
 To access this move history from inside your Codemaster or Guesser bot, simply call `super().get_move_history()`.
