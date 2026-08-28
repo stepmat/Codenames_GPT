@@ -53,10 +53,7 @@ The competition will consist of two separate tracks:
   * Note. This year, the single team track will also evaluate how agents perform when paired with teammates from other submissions. This is to prevent agents from simply learning hardcoded strategies for their submitted teammate, incentivising more general playstyles.
 * **Two Teams:** Played using the full set of rules from the original Codenames game, where two teams (red codemaster/guesser and blue codemaster/guesser) attempt to identify all words of their team’s colour first. Selecting the assassin word results in an immediate win for the other team. Guessers can also inadvertently help the opposing team win if they accidentally select any words of their colour. Rather than using a scoring system, this version measures success in terms of overall win-rate.
 
-Each submission will (unless otherwise requested by the entrants) be automatically included in both tracks, with the entrant evaluation process for both tracks being as follows:
-
-* **First Round:** The first round will consist of a round robin style tournament to evaluate the performance of each entrant team. For the Single Team track, performance will be determined based on the average score over all games. For the Two Teams track, performance will be determined based on the average win-rate over all games. The top performing four teams from each track will then progress to the second round. In the event of a tie, a single additional game will be played to break the split.
-* **Second Round:** The second round will consist of a single elimination style knockout tournament between the top four teams. Pair-ups will be determined by standard seeding (i.e., highest paired with lowest) and matches will be a best of three games.
+Each submission will (unless otherwise requested by the entrants) be automatically included in both tracks. A round robin style tournament will be used to evaluate the performance of each team. For the Single Team track, performance will be determined based on the average score over all games. For the Two Teams track, performance will be determined based on the average win-rate over all games.
 
 ## Prize Money
 
