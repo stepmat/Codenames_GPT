@@ -60,7 +60,13 @@ Each submission will (unless otherwise requested by the entrants) be automatical
 
 ## Prize Money
 
-TBD
+This IEEE CIS Education Competition Subcommittee will aware prize money to the top three teams (performance averaged over both tracks):
+- First Place: $500 USD
+- Second Place: $300 USD
+- Third Place: $200 USD
+
+Terms and Conditions:
+- Competition entrants who wish to be eligible for this prize money can only be associated with a maximum of one submission.
 
 ## Additional Rules
 
