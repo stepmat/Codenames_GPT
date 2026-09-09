@@ -1,4 +1,4 @@
-# Codenames AI Competition (2026)
+<img width="436" height="80" alt="image" src="https://github.com/user-attachments/assets/f3b14642-2a68-4095-bd4e-5be3c9b3e65f" /># Codenames AI Competition (2026)
 
 ![image](https://github.com/user-attachments/assets/510cbaa5-a579-46a3-94c6-2cee11f60a7c)
 
@@ -15,13 +15,42 @@ This competition and the code framework provided in this repository are based on
   
 **Further installation requirements are found below.**
 
-## Registration
+## Competiton Results
 
-To register for this competition, please post a message on the following discord group stating your team name, along with details of the members and their affiliations:
-* [Discord](https://discord.gg/uHUynQJp6r)
+The 2026 iteration of the Codenames AI competition has now concluded! 
+Congratulations to all teams (new and old) that participated in this year's competition!
 
-A separate private channel for your team will then be created for you to ask private questions to the organisers.
-Public questions or troubleshooting requests should be posted on the main general channel.
+We had six new competition submissions this year:
+* C.O.S.M.O. (v2), Brigham Young University (Christopher Archibald, Joey Dahlke, Caleb Drake, Tom Esplin, Gabriel Mendenhall)
+* Ys code, Gwangju Institute of Science and Technology (Younsung Lee)
+* oBirdy, The Harker School, San Jose, CA (Manan Gupta)
+* Edamame, Affirm Inc (Jiarui Xu)
+* Mokapot, Independent Researcher (Yiming)
+* Grubbs Lab, N/A, (N/A)
+
+Along with six returning entries from last year:
+* Purrfect Cat-titude, Ohio University - Athens (Tin Vuong, Minh Le)
+* Mi3, UC Merced (Kobe Kimoto-Ross, Cristian Parker, Ross Greer)
+* Semantic Squad, Ohio University (Shiva Nagalla, Monitha Nimmagadda)
+* Kossy, Independent Researcher (Katsuki Ohto)
+* Smiling Turtle, The Hebrew University of Jerusalem, (Daniel Ruderman, Dafna Shahaf)
+* Wild Falcon, Independent Researcher (Mikhail Vlasov)
+
+We had a total of 12 teams this year (6 returning entries, 1 updated entry, 5 completely new entries).
+These agent teams were then evaluated along with a baseline GPT 4.1 agent.
+Full results for the competition can be found in the provided results folder in this repository, with an overall summary given below:
+
+### Single Team Track:
+Best of 75 games (only red team), where you try to win in the fewest turns (lowest score)
+* 1st place - oBirdy (12.27)
+* 2nd place - Edamame (12.31)
+* 3rd place - Purrfect Cat-titude (12.80)
+
+### Two Team Track:
+Best of 72 games (red and blue teams), where you try to win the most games (highest win-rate)
+* 1st place - C.O.S.M.O. (84.7% win-rate)
+* 2nd place - Smiling Turtle (79.2% win-rate)
+* 3rd place - Kossy (73.6% win-rate)
 
 ## Submissions
 
@@ -54,16 +83,6 @@ The competition will consist of two separate tracks:
 * **Two Teams:** Played using the full set of rules from the original Codenames game, where two teams (red codemaster/guesser and blue codemaster/guesser) attempt to identify all words of their team’s colour first. Selecting the assassin word results in an immediate win for the other team. Guessers can also inadvertently help the opposing team win if they accidentally select any words of their colour. Rather than using a scoring system, this version measures success in terms of overall win-rate.
 
 Each submission will (unless otherwise requested by the entrants) be automatically included in both tracks. A round robin style tournament will be used to evaluate the performance of each team. For the Single Team track, performance will be determined based on the average score over all games. For the Two Teams track, performance will be determined based on the average win-rate over all games.
-
-## Prize Money
-
-This IEEE CIS Education Competition Subcommittee will award prize money to the top three teams (performance averaged over both tracks):
-- First Place: $500 USD
-- Second Place: $300 USD
-- Third Place: $200 USD
-
-Terms and Conditions:
-- Competition entrants who wish to be eligible for this prize money can only be associated with a maximum of one submission.
 
 ## Additional Rules
 
