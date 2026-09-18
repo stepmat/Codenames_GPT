@@ -25,7 +25,7 @@ We had six new competition submissions this year:
 * Ys code, Gwangju Institute of Science and Technology (Younsung Lee)
 * oBirdy, The Harker School, San Jose, CA (Manan Gupta)
 * Edamame, Affirm Inc (Jiarui Xu)
-* Mokapot, Independent Researcher (Yiming)
+* Mokapot, Polytechnic of Milan (Yiming)
 * Grubbs Lab, N/A, (N/A)
 
 Along with six returning entries from last year:
