@@ -52,6 +52,12 @@ Best of 72 games (red and blue teams), where you try to win the most games (high
 * 2nd place - Smiling Turtle (79.2% win-rate)
 * 3rd place - Kossy (73.6% win-rate)
 
+### Overall Winners:
+Average rank across both competition tracks
+* 1st place - Edamame (2nd single-team, 5th two-teams)
+* 2nd place - oBirdy (1st single-team, 7th two-teams)
+* 3rd place - C.O.S.M.O (7th single-team, 1st two-teams)
+
 ## Submissions
 
 Competition entrants will need to submit two agents, one Codemaster and one Guesser.
